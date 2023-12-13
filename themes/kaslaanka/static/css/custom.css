@@ -13,7 +13,7 @@ html, * {
     padding-top: 18.75px;
     padding-bottom: 18.75px;
     font-family: "Poppins";
-    height: 69.5px
+    height: 69.5px;
 }
 
 .mfheader a {
@@ -71,6 +71,8 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 80rem;
+
 }
 
 a {
