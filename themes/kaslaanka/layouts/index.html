@@ -8,10 +8,9 @@
 	<div class="mx-0">
 	  {{ partial "face" .}}
 	</div>
-	<hr>
 	<div class="posts">
 	  <div class="row recent-articles">
-	    <h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 0px;">Posts recientes</h4>
+	    <h5 class="index-title justify-content-center some-weight col-auto" style="margin-bottom: 0px;">Posts recientes</h5>
 	  </div>
 	  {{ range .Data.Pages.GroupByDate "2006" "desc"}}
 	  	

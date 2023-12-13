@@ -42,7 +42,7 @@ params:
   baseURL: "https://m1cr0xf7.github.io/kaslaanka/"
   sitename: "Newsteller"
   # it will produce: copyrights (c) 2022 joe
-  copyrights: Newsteller hábitos
+  copyrights: Proyecto de integración
   # path to the favicon directory
   # see ./layouts/_defaults/baseof.html line #30 to line #37
 #  faviconpath: "/img/favicon"
