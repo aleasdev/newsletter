@@ -1,0 +1,30 @@
+<ul class="list-unstyled">
+  {{ $length := 5 }}
+  {{ with ($.Site.Params.paginationLen) }}
+  {{ $length = $.Site.Params.paginationLen }}
+  {{ end }}
+  {{ range $n, $p := first $length (where .Data.Pages.ByDate.Reverse ".Params.unlisted" "!=" true) }}
+    <li class="recent-articles">
+      <a href="{{ .Permalink }}" class="recent-posts">
+        <div class="post-card">
+          {{ with .Resources.Match "*" }}
+            <!-- Print the first image associated with the post as a banner -->
+            {{ with index . 0 }}
+              <div class="post-banner">
+                <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="post-image">
+              </div>
+            {{ end }}
+          {{ end }}
+          <h4>
+            <div class="meta-data">
+              {{ .Title }}
+              <time class="meta-data-time" datetime="{{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}">
+              {{ .Date.Format (.Site.Params.dateform | default "02/01/2006") }}
+              </time>
+            </div>
+          </h4>
+        </div>
+      </a>
+    </li>
+  {{ end }}
+</ul>

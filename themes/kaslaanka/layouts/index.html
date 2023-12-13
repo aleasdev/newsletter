@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ partial "header" . }}
+<div class="content">
+	
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-8">
+	<div class="mx-0">
+	  {{ partial "face" .}}
+	</div>
+	<hr>
+	<div class="posts">
+	  <div class="row recent-articles">
+	    <h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 0px;">Posts recientes</h4>
+	  </div>
+	  {{ range .Data.Pages.GroupByDate "2006" "desc"}}
+	  	
+	  {{ range (sort .Pages "Date" "desc") }}
+	  
+	  {{ partial "globallist" . }}
+
+	  
+	  {{ end }}
+	  
+	  {{ end }}
+	  
+	</div>
+	<hr>
+	
+	{{ partial "footer" . }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
