@@ -1,0 +1,67 @@
+sitename: "Newsteller"
+baseURL: "https://habitos-newsteller.netlify.app/"
+languageCode: en-us
+title: "Newsteller"
+author: m1cr0xf7
+
+relativeURLs: true
+
+
+enableEmoji: true
+hasCJKLanguage: false
+pygmentsstyle: "tango"
+pygmentscodefences: true
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Links of the navbar
+menu:
+  primary:
+    - name: Inicio
+      url: /
+      weight: 1
+    - name: Posts
+      url: /posts
+      weight: 2
+
+
+# You can add languages!
+# do not expect it to work out of the box
+# https://gohugo.io/content-management/multilingual/
+defaultContentLanguage: en
+
+
+params:
+  # you should change this
+  # or delete it with /layout/blog/single.html
+  # the latter is recommended
+  baseURL: "https://m1cr0xf7.github.io/kaslaanka/"
+  sitename: "Newsteller"
+  # it will produce: copyrights (c) 2022 joe
+  copyrights: Newsteller hábitos
+  # path to the favicon directory
+  # see ./layouts/_defaults/baseof.html line #30 to line #37
+#  faviconpath: "/img/favicon"
+  # projects will show in the index page
+  myprojects:
+    - name: "Totally Awesome Project"
+      description: "Machine Learning Magic!!!"
+      url: https://example.com
+    - name: "Kaslaanka"
+      description: "The best hugo theme ever!!!"
+      url: https://github.com/M1cR0xf7/kaslaanka
+  # link to more projects
+  # show your github repositories as example
+  # or create your own page.
+  projectsURL: https://example.com
+
+  # a brief about me
+  brief_about: 
+
+# and don't forget
+theme: kaslaanka
+
