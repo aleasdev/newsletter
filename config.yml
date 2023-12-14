@@ -1,7 +1,7 @@
-sitename: "Newsteller"
-baseURL: "https://habitos-newsteller.netlify.app/"
+sitename: "Newsletter"
+baseURL: "https://habitos-Newsletter.netlify.app/"
 languageCode: en-us
-title: "Newsteller"
+title: "Newsletter"
 author: m1cr0xf7
 
 relativeURLs: true
@@ -40,7 +40,7 @@ params:
   # or delete it with /layout/blog/single.html
   # the latter is recommended
   baseURL: "https://m1cr0xf7.github.io/kaslaanka/"
-  sitename: "Newsteller"
+  sitename: "Newsletter"
   # it will produce: copyrights (c) 2022 joe
   copyrights: Proyecto de integración
   # path to the favicon directory
